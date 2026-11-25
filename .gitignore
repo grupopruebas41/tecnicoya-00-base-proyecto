@@ -1,0 +1,89 @@
+# Dependencias
+examples/
+example/
+backend/api/data/
+tmp/
+node_modules/
+.pnp
+.pnp.js
+.venv/
+venv/
+ENV/
+env/
+vendor/
+target/
+bin/
+obj/
+
+# Builds y compilados
+dist/
+build/
+release/
+out/
+.next/
+.nuxt/
+.astro/
+.output/
+*.class
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+*.egg
+
+# Entornos y secretos
+.env
+.env.local
+.env.testing
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# Logs y temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.stack
+*.tar
+*.tar.gz
+*.zip
+.DS_Store
+Thumbs.db
+.cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
+
+# DevOps y Framework temporal
+.devops/artifacts/
+.devops/config/gitlab.env
+metadata/reports/
+metadata/history/
+.runtime-python/
+
+# backend/api/storage usa los .gitignore estándar de Laravel dentro de cada carpeta
+backend/api/bootstrap/cache/*
+!backend/api/bootstrap/cache/.gitignore
+backend/api/database/*.sqlite
+backend/api/.phpunit.result.cache
+.media-tools/
+output/
+
+# Artefactos de pruebas (evidencia se archiva aparte, según el plan de pruebas)
+frontend/web/cypress/screenshots/
+frontend/web/cypress/videos/
+backend/api/test-results/
+frontend/web/test-results/
+backend/api/coverage/
+
+# Exportes crudos de SonarQube: incluyen autores (correos) de los commits (DEF-17).
+# Versionar solo el resumen de scripts/exportar-sonar-anonimo.mjs (issues-anonimo.json).
+**/sonar*/issues.json
+**/sonar*/*-crudo.json
+
+# Word con códigos de alumno retirado del repositorio (DEF-17, decisión D-07).
+docs/documentacion/informe-final/Proyecto-final-TecnicoYa-capitulos-01-al-13.docx
